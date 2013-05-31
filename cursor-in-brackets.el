@@ -4,7 +4,7 @@
 
 ;; Author:   yascentur <screenname at gmail dot com>
 ;; Keywords: cursor bracket quote
-;; Version:  1.0.0
+;; Version:  1.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -50,9 +50,12 @@
 ;;; Code:
 
 (defgroup cursor-in-brackets-mode nil
-  "Cursor-in-brackets mode"
+  "Cursor in brackets mode"
   :group  'convenience
   :prefix "cursor-in-brackets-mode-")
+
+(defvar cursor-in-brackets-mode-map (make-sparse-keymap)
+  "Cursor in brackets mode map")
 
 (defun cursor-in-brackets-mode-insert-right-bracket-in-general (left-brackets right-bracket)
   "Insert right bracket in general"
@@ -158,10 +161,10 @@
     "$"  'cursor-in-brackets-mode-insert-dollar))
 
 (define-minor-mode cursor-in-brackets-mode
-  "Cursor-in-brackets mode"
-  :group   'cursor-in-brackets-mode
+  "Cursor in brackets mode"
   :lighter " CB"
-  :keymap  (make-sparse-keymap)
+  :group   'cursor-in-brackets-mode
+  :keymap  'cursor-in-brackets-mode-map
   (when cursor-in-brackets-mode
       (cursor-in-brackets-mode-init-map)))
 

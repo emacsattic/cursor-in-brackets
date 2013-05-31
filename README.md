@@ -1,6 +1,6 @@
 # cursor-in-brackets.el --- move cursor in brackets/quotes when right bracket/quote is inserted
 
-`cursor-in-brackets-mode` は、左括弧・クオートの後に右括弧・クオートが入力されたときにカーソルを括弧の中に移動させるマイナーモードです。
+`cursor-in-brackets-mode` は、左括弧・クオートの後に右括弧・クオートが入力されたときにカーソルを括弧・クオートの中に移動させるマイナーモードです。
 対象の括弧とクオートは以下の通りです。
 
 - ()
@@ -9,8 +9,8 @@
 - <>
 - ""
 - ''
-- `'
-- ``
+- \`'
+- \`\`
 - $$
 
 `cursor-in-brackets-mode` はリージョンに基づく括弧付けにも対応しています。
