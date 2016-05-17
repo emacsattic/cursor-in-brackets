@@ -4,7 +4,7 @@
 
 ;; Author:   yascentur <screenname at gmail dot com>
 ;; Keywords: cursor bracket quote
-;; Version:  1.0.1
+;; Version:  1.0.2b
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -160,6 +160,7 @@
   (define-key cursor-in-brackets-mode-map
     "$"  'cursor-in-brackets-mode-insert-dollar))
 
+;;;###autoload
 (define-minor-mode cursor-in-brackets-mode
   "Cursor in brackets mode"
   :lighter " CB"
@@ -168,6 +169,7 @@
   (when cursor-in-brackets-mode
       (cursor-in-brackets-mode-init-map)))
 
+;;;###autoload
 (define-global-minor-mode global-cursor-in-brackets-mode
   cursor-in-brackets-mode
   (lambda ()
