@@ -45,7 +45,7 @@
 ;;; Usage:
 
 ;;     (require 'cursor-in-brackets)
-;;     (global-cursor-in-brackets-mode t)
+;;     (global-cursor-in-brackets-mode 1)
 
 ;;; Code:
 
@@ -172,8 +172,7 @@
 ;;;###autoload
 (define-global-minor-mode global-cursor-in-brackets-mode
   cursor-in-brackets-mode
-  (lambda ()
-    (cursor-in-brackets-mode t)))
+  cursor-in-brackets-mode)
 
 (provide 'cursor-in-brackets)
 

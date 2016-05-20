@@ -20,7 +20,7 @@
 # 使い方
 
     (require 'cursor-in-brackets)
-    (global-cursor-in-brackets-mode t)
+    (global-cursor-in-brackets-mode 1)
 
 # バージョン
 
