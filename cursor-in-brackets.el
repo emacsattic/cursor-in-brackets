@@ -1,6 +1,6 @@
 ;;; cursor-in-brackets.el --- move cursor in brackets/quotes when right bracket/quote is inserted
 
-;;; Copyright (C) 2013 yascentur
+;;; Copyright (C) 2013-2016 yascentur
 
 ;; Author:   yascentur <screenname at gmail dot com>
 ;; Keywords: cursor bracket quote
@@ -38,9 +38,9 @@
 
 ;; The `cursor-in-brackets-mode` also supports region-based bracketing.
 ;; When a right bracket is inserted with a `transient-mark-mode` region,
-;; the region becomes bracked and a cursor is moved before the right bracket.
+;; the region becomes bracketed and the cursor is moved before the right bracket.
 ;; When a left bracket is inserted instead,
-;; the region becomes bracked and a cursor is moved after the left bracket.
+;; the region becomes bracketed and the cursor is moved after the left bracket.
 
 ;;; Usage:
 
